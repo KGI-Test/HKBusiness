@@ -1,0 +1,15 @@
+﻿<UltraGrid>
+	<DisplayLayout
+	/>
+	<DataSet>
+		<DataTable>
+			<Columns ColumnName = "HKDSR_DATE" Caption="Date" Width="80" Format="####/##/##" />
+			<Columns ColumnName = "HKDSR_STOCK_CODE" Caption="Stock Code" Width="120"/>
+			<Columns ColumnName = "HKDSR_STOCK_SHORT_NAME" Caption="Stock Short Name" Width="140"/>
+			<Columns ColumnName = "HKDSR_CURRENCY" Caption="Currency" Width="80" />
+			<Columns ColumnName = "HKDSR_TICKER" Caption="Ticker" Width="80"/>
+			<Columns ColumnName = "HKDSR_SBL_RATE_1" Caption="SBL Rate of Avg 30" Width="140" />
+			<Columns ColumnName = "HKDSR_SBL_RATE_2" Caption="SBL Rate of Avg 5" Width="140" />
+		</DataTable>
+	</DataSet>
+</UltraGrid>

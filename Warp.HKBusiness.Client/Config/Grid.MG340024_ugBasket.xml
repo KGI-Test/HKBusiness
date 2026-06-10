@@ -1,0 +1,19 @@
+﻿<UltraGrid>
+	<DisplayLayout
+		ColumnChooserButton = "False"
+	/>
+	<DataSet>
+		<DataTable>
+			<Columns ColumnName = "HKAVL_DATE" Caption="Date" Width="80" Format="####/##/##"/>
+			<Columns ColumnName = "INSALA_CODE" Caption="Ticker" Width="100"/>
+			<Columns ColumnName = "USD_TOTAL_SIZE" Caption="USD Total Size"  Style ="Double" Format="#,##0.##" MaskInput = "nnn,nnn.nn" Width="80" />
+			<Columns ColumnName = "USD_SBL_LENT" Caption="USD SBL Lent"  Style ="Double" Format="#,##0.##" MaskInput = "nnn,nnn.nn" Width="80" />
+			<Columns ColumnName = "HKAVL_SBL_AVAILABLE_BALANCE" Caption="SBL Available Balance" Width="100" Style ="Double" Format="#,##0" MaskInput = "nnn,nnn"/>
+			<Columns ColumnName = "SBL_RATE" Caption="SBL Rate"  Style ="Double" Format="#,##0.##" MaskInput = "nnn,nnn.nn" Width="80" />
+			<Columns ColumnName = "HKAVL_NO_OF_MARGIN_HOLDER" Caption="No of Margin Holder" Width="100" Style ="Double" Format="#,##0" MaskInput = "nnn,nnn"/>
+			<Columns ColumnName = "HKAVL_MARGIN_AC_BALANCE" Caption="Margin AC Balance" Width="100" Style ="Double" Format="#,##0" MaskInput = "nnn,nnn"/>
+			<Columns ColumnName = "HKAVL_SHORT_SELLING_AC_BALANCE" Caption="Short Selling AC Balance" Width="100" Style ="Double" Format="#,##0" MaskInput = "nnn,nnn"/>
+			<Columns ColumnName = "SHORT_SELL" Caption="Short Sell" Width="100" Style ="Double" Format="#,##0" MaskInput = "nnn,nnn"/>
+		</DataTable>
+	</DataSet>
+</UltraGrid>

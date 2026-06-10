@@ -1,0 +1,19 @@
+﻿<UltraGrid>
+	<DisplayLayout
+		ColumnChooserButton = "False"
+	/>
+	<DataSet>
+		<DataTable>
+			<Columns ColumnName = "HKOHD_ROWSEQ" Caption="Row Sequence" Width="120" Style="EditButton" Menukey="MG340026"/>
+			<Columns ColumnName = "HKOHD_DATE" Caption="Date" Width="80" Format="####/##/##"/>
+			<Columns ColumnName = "HKOHD_TYPE" Caption="Type" Width="80"/>
+			<Columns ColumnName = "HKOHD_COUNTERPARTY" Caption="Counterparty" Width="200" Hidden="True"/>
+			<Columns ColumnName = "FLGDAT_FLGDTA" Caption="Counterparty" Width="200"/>
+			<Columns ColumnName = "HKOHD_INSNBR" Caption="Ticker" Width="100" Hidden="True"/>
+			<Columns ColumnName = "INSTR_CODE" Caption="Ticker" Width="100"/>
+			<Columns ColumnName = "HKOHD_QUANTITY" Caption="Quantity" Width="100" Style ="Double" Format="#,##0" MaskInput = "nnn,nnn"/>
+			<Columns ColumnName = "HKOHD_SBL_RATE" Caption="Rate"  Style ="Double" Format="#,##0.##" MaskInput = "nnn,nnn.nn" Width="80" />
+			<Columns ColumnName = "SBL" Caption="" Width="20" Style="EditButton" Menukey="MG340028"/>
+		</DataTable>
+	</DataSet>
+</UltraGrid>

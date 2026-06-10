@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B72B5FB5-6014-4B78-B993-2ABC9544B82E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Warp.HKBusiness.Client</RootNamespace>
+    <AssemblyName>Warp.HKBusiness.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\KGI_BSS_SG_DEV\Client\bins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EFramework.Client.WindowForms.WinForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\EFramework.Client.WindowForms.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\EFramework.EFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame.Common, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\EFramework.EFrame.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame.DB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\EFramework.EFrame.DB.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame.Ftp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\EFramework.EFrame.Ftp.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\EFramework.EFrame.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame.Message, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\EFramework.EFrame.Message.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame.MSExcel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\EFramework.EFrame.MSExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Core.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Documents.Core.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Documents.Excel.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.IO.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Documents.IO.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Reports.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Documents.Reports.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.TextDocument.CSharp.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Documents.TextDocument.CSharp.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.TextDocument.TSql.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Documents.TextDocument.TSql.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.TextDocument.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Documents.TextDocument.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.TextDocument.VisualBasic.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Documents.TextDocument.VisualBasic.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Word.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Documents.Word.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Math.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Math.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.Core.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Olap.Core.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataProvider.Adomd.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Olap.DataProvider.Adomd.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataProvider.Flat.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Olap.DataProvider.Flat.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataProvider.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Olap.DataProvider.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataProvider.Xmla.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Olap.DataProvider.Xmla.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataSource.Flat.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Olap.DataSource.Flat.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataSource.Mdx.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Olap.DataSource.Mdx.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataSource.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Olap.DataSource.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataSource.Xmla.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Olap.DataSource.Xmla.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Shared.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Undo.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Undo.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.AppStylistSupport.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.AppStylistSupport.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.Barcode.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.DataVisualization.Barcode.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.Shared.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.DataVisualization.Shared.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraDataChart.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.DataVisualization.UltraDataChart.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraGauges.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.DataVisualization.UltraGauges.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraGeographicMap.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.DataVisualization.UltraGeographicMap.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraSparkline.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.DataVisualization.UltraSparkline.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.Misc.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Portable.Core.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.Portable.Core.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.SupportDialogs.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.SupportDialogs.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraChart.v24.2.Design, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraChart.v24.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraGauge.v24.2.Design, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraGauge.v24.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCalcManager.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinCalcManager.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCalcManager.v24.2.FormulaBuilder, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinCalcManager.v24.2.FormulaBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCarousel.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinCarousel.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinChart.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinChart.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinDataSource.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDock.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinDock.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinEditors.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinExplorerBar.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinFormattedText.WordWriter.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinFormattedText.WordWriter.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGanttView.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinGanttView.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGauge.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinGauge.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.DocumentExport.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinGrid.DocumentExport.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinGrid.ExcelExport.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinGrid.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.WordWriter.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinGrid.WordWriter.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinInkProvider.Ink17.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinInkProvider.Ink17.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinListBar.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinListBar.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinListView.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinListView.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinLiveTileView.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinLiveTileView.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinMaskedEdit.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinMaskedEdit.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinOfficeNavBar.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinOfficeNavBar.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinPivotGrid.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinPivotGrid.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinPrintPreviewDialog.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinPrintPreviewDialog.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinRadialMenu.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinRadialMenu.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinSchedule.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSpellChecker.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinSpellChecker.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSpreadsheet.ChartAdapter.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinSpreadsheet.ChartAdapter.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSpreadsheet.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinSpreadsheet.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinStatusBar.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinTabbedMdi.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinTabControl.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinToolbars.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTree.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.UltraWinTree.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v24.2, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.v24.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v24.2.Design, Version=24.2.20242.19, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\Client\bins\Infragistics4.Win.v24.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportViewer.Designer.cs">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SBL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SBL.Designer.cs">
+      <DependentUpon>SBL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hold.Designer.cs">
+      <DependentUpon>Hold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SBLQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SBLQuery.Designer.cs">
+      <DependentUpon>SBLQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoldQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoldQuery.Designer.cs">
+      <DependentUpon>HoldQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportViewer.resx">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SBL.resx">
+      <DependentUpon>SBL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hold.resx">
+      <DependentUpon>Hold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SBLQuery.resx">
+      <DependentUpon>SBLQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoldQuery.resx">
+      <DependentUpon>HoldQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="SBL\ImportSBLRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SBL\ImportSBLRate.Designer.cs">
+      <DependentUpon>ImportSBLRate.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SBL\ImportSBLRate.resx">
+      <DependentUpon>ImportSBLRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Lib\.gitkeep" />
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Config\Grid.MG340023.ugINDEX.xml" />
+    <Content Include="Config\Grid.MG340022.ugCOUNTERPARTY.xml" />
+    <Content Include="Config\Grid.MG340024_ugBasket.xml" />
+    <Content Include="Config\Grid.MG340024_ugTradeDetail.xml" />
+    <Content Include="Config\Grid.MG340024_ugDateDetail.xml" />
+    <Content Include="Config\Grid.MG340024_ugSBLDetail.xml" />
+    <Content Include="Config\Grid.MG340027_ugSBL.xml" />
+    <Content Include="Config\Grid.MG340025_ugHold.xml" />
+    <Content Include="Config\Grid.MG340014_ugSBLRateData.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /E /Y /I /F "$(ProjectDir)Config" "C:\KGI_BSS_SG_DEV\Client\Config"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

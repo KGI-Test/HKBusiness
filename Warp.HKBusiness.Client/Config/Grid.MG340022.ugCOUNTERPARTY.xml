@@ -1,0 +1,15 @@
+﻿<UltraGrid>
+	<DisplayLayout
+		ColumnChooserButton = "False"
+	/>
+	<DataSet>
+		<DataTable>
+			<Columns ColumnName = "FLGDAT_FLGNAM" Caption="DATA" Hidden = "True"/>
+			<Columns ColumnName = "FLGDAT_FLGVAR" Caption="Code" Width = "80" AllowEdit = "True"/>
+			<Columns ColumnName = "FLGDAT_FLGDTA" Caption="Counterparty" Width = "400" AllowEdit = "True"/>
+			<Columns ColumnName = "FLGDAT_FLGDSC" Caption="eMail Address" Width = "150" AllowEdit = "True"/>
+			<Columns ColumnName = "FLGDAT_UPDTME" Caption="UPDTME" Style ="DateTime" Format="yyyy/MM/dd HH:mm:ss" Width="140" Hidden="True" />
+			<Columns ColumnName = "FLGDAT_UPDUSR" Caption="UPDUSR" Width="80" Hidden="True" />
+		</DataTable>
+	</DataSet>
+</UltraGrid>

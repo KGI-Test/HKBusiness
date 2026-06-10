@@ -1,0 +1,36 @@
+/*
+SG340020_GetScheduleList.sql
+*/
+
+SELECT 
+    SCH_ID,
+    SCH_NAME,
+    SCH_ENABLE,
+    SCH_START_TIME,
+    SCH_CALENDAR_ID,
+    SCH_TASK 
+FROM 
+    EDAISYS.dbo.SCHEDULE
+WHERE 
+    SCH_ID IN ('SG.SCH.HKEligibleShortSelling',
+    'SG.SCH.HKEligibleShortSelling_LastTradeDate',
+    'SG.SCH.DailyImportSBLAvailableGSPS',
+    'SG.SCH.DailyImportSBLAvailableGSPS_LastTradeDate',
+    --'SG.SCH.DailyImportSBLRate',
+    'SG.SCH.DailyImportSBLOpenTrades',
+    'SG.SCH.DailyImportSBLOpenTrades_LastTradeDate',
+    'SG.SCH.DailyOutstandingPosition',
+    'SG.SCH.DailyOutstandingPosition_LastTradeDate',
+    'SG.SCH.HistoricalBalance5Weeks',
+    'SG.SCH.HistoricalBalance5Weeks_LastTradeDate',
+    'SG.SCH.HKSBLLocateFile',
+    'SG.SCH.HKSBLLocateFile_LastTradeDate',
+    'SG.SCH.HKBloombergBenefitEntitlement',
+    'SG.SCH.HKBloombergBenefitEntitlement_LastTradeDate',
+    'SG.SCH.HKBloombergLotSize',
+    'SG.SCH.HKBloombergLotSize_LastTradeDate',
+    'SG.SCH.HKSBLLocateFileQuadeye',
+    'SG.SCH.HKSBLLocateFileGAM',
+    'SG.SCH.HKSBLDailyImportSBLRateData',
+    'SG.SCH.HKSBLDailyImportIndexData',
+    'SG.SCH.HKSBLLocateFileSocGen')

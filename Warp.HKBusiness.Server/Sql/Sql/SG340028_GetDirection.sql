@@ -1,0 +1,8 @@
+/*
+SG340028_GetDirection.sql
+
+*/
+
+SELECT 'BORROW' AS CODE, 'Borrow' AS NAME
+UNION ALL 
+SELECT 'LEND' AS CODE, 'Lend' AS NAME

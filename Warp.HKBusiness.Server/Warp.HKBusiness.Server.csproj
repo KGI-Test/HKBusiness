@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96496B06-9AC5-4B2B-AF02-B3E69568B5CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Warp.HKBusiness.Server</RootNamespace>
+    <AssemblyName>Warp.HKBusiness.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\KGI_BSS_SG_DEV\SGSystem\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EFramework.DBModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\SGSystem\bin\EFramework.DBModel.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\SGSystem\bin\EFramework.EFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame.Common, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\SGSystem\bin\EFramework.EFrame.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame.DB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\SGSystem\bin\EFramework.EFrame.DB.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame.Ftp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\SGSystem\bin\EFramework.EFrame.Ftp.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame.Http, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\SGSystem\bin\EFramework.EFrame.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\SGSystem\bin\EFramework.EFrame.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame.Message, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\SGSystem\bin\EFramework.EFrame.Message.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame.MSExcel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\SGSystem\bin\EFramework.EFrame.MSExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.EFrame.MSWord, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\SGSystem\bin\EFramework.EFrame.MSWord.dll</HintPath>
+    </Reference>
+    <Reference Include="EFramework.Server.Servicies.ServiceSpace, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\KGI_BSS_SG_DEV\SGSystem\bin\EFramework.Server.Servicies.ServiceSpace.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.23.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.IO" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SBL.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Hold.cs" />
+    <Compile Include="SBL\SBLRate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Template\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sql\Sql\SG340024_GetBasket.sql" />
+    <Content Include="Sql\Sql\SG340024_GetDateDetail.sql" />
+    <Content Include="Sql\Sql\SG340024_GetInventory.sql" />
+    <Content Include="Sql\Sql\SG340024_GetSBLDetail.sql" />
+    <Content Include="Sql\Sql\SG340019_GetTickers.sql" />
+    <Content Include="Sql\Sql\SG340024_GetTickers.sql" />
+    <Content Include="Sql\Sql\SG340024_GetTradeDetail.sql" />
+    <Content Include="Sql\Sql\SG340026_GetHold.sql" />
+    <Content Include="Sql\Sql\SG340026_GetCounterparty.sql" />
+    <Content Include="Sql\Sql\SG340025_GetHold.sql" />
+    <Content Include="Sql\Sql\SG340027_GetSBLCSV.sql" />
+    <Content Include="Sql\Sql\SG340027_GetSBL.sql" />
+    <Content Include="Sql\Sql\SG340028_GetDirection.sql" />
+    <Content Include="Sql\Sql\SG340028_GetSBL.sql" />
+    <Content Include="Sql\Sql\SG340020_GetScheduleList.sql" />
+    <Content Include="Sql\Sql\SG340014_GetImportSBLRateData.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /E /Y /I /F "$(ProjectDir)Template" "C:\KGI_BSS_SG_DEV\SGSystem\Template"
+xcopy /E /Y /I /F "$(ProjectDir)Sql\Sql" "C:\KGI_BSS_SG_DEV\SGSystem\Sql"
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

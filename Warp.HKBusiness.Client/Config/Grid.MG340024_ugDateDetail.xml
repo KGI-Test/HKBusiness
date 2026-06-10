@@ -1,0 +1,16 @@
+﻿<UltraGrid>
+	<DisplayLayout
+		ColumnChooserButton = "False"
+	/>
+	<DataSet>
+		<DataTable>
+			<Columns ColumnName = "HKBFW_HKSE_CODE" Caption="HKSE Code HK" Width="120"/>
+			<Columns ColumnName = "HKBFW_DATE1" Caption="Date1" Width="100" Style ="Double" Format="#,##0" MaskInput = "nnn,nnn,nnn"/>
+			<Columns ColumnName = "HKBFW_DATE2" Caption="Date2" Width="100" Style ="Double" Format="#,##0" MaskInput = "nnn,nnn,nnn"/>
+			<Columns ColumnName = "HKBFW_DATE3" Caption="Date3" Width="100" Style ="Double" Format="#,##0" MaskInput = "nnn,nnn,nnn"/>
+			<Columns ColumnName = "HKBFW_DATE4" Caption="Date4" Width="100" Style ="Double" Format="#,##0" MaskInput = "nnn,nnn,nnn"/>
+			<Columns ColumnName = "HKBFW_DATE5" Caption="Date5" Width="100" Style ="Double" Format="#,##0" MaskInput = "nnn,nnn,nnn"/>
+			<Columns ColumnName = "HKBFW_DATE6" Caption="Date6" Width="100" Style ="Double" Format="#,##0" MaskInput = "nnn,nnn,nnn"/>
+		</DataTable>
+	</DataSet>
+</UltraGrid>

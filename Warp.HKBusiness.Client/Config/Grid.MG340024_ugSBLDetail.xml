@@ -1,0 +1,19 @@
+﻿<UltraGrid>
+	<DisplayLayout
+		ColumnChooserButton = "False"
+	/>
+	<DataSet>
+		<DataTable>
+			<Columns ColumnName = "HKAVL_DATE" Caption="Date" Width="80" Format="####/##/##"/>			
+			<Columns ColumnName = "INSALA_INSTR_INSNBR" Caption="INSALA_INSTR_INSNBR" Width="100" Hidden="True"/>
+			<Columns ColumnName = "INSALA_CODE" Caption="Ticker" Width="100"/>
+			<Columns ColumnName = "HKAVL_MARGIN_AC_BALANCE" Caption="Total Size"  Style ="Double" Format="#,##0.00" MaskInput = "nnn,nnn,nnn.nn" Width="100" />
+			<Columns ColumnName = "SHORT_SELLING_AC_BALANCE" Caption="SBL Lent"  Style ="Double" Format="#,##0.00" MaskInput = "nnn,nnn,nnn.nn" Width="100" />
+			<Columns ColumnName = "ACTUAL_AVAILABLE" Caption="Actual Available"  Style ="Double" Format="#,##0.00" MaskInput = "nnn,nnn,nnn.nn" Width="100" />
+			<Columns ColumnName = "SBL_RATE" Caption="SBL Rate"  Style ="Double" Format="#,##0.00" MaskInput = "nnn,nnn.nn" Width="80" />
+			<Columns ColumnName = "SBL_TOTAL" Caption="SBL" Width="120" Style="EditButton" Format="#,##0.00" Menukey="MG340027"/>
+			<Columns ColumnName = "HOLD_TOTAL" Caption="On Hold" Width="120" Style="EditButton" Format="#,##0.00" Menukey="MG340025"/>
+			<Columns ColumnName = "REMAINING_BALANCE" Caption="Remaining Balance"  Style ="Double" Format="#,##0.00" MaskInput = "nnn,nnn,nnn.nn" Width="100" />
+		</DataTable>
+	</DataSet>
+</UltraGrid>
