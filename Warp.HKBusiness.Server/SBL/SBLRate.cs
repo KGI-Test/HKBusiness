@@ -550,6 +550,7 @@ namespace Warp.HKBusiness.Server
         }
 
         /// <summary>
+        /// no use
         /// 2.7	LOCATE FILE
         /// SG340019_HKSBLLocateFile
         /// SG.SCH.HKSBLLocateFile
@@ -625,11 +626,15 @@ namespace Warp.HKBusiness.Server
             var processDate = parameters["PROCESS_DATE"].ToString();
             var source = parameters["SOURCE"].ToString();
             var shareFolder = Model.FlagData["KGIHK_SBL", "SFTP"].FlagData;
-
+            var shareFolderGrasshopper = Model.FlagData["SBL_GAM_HK_CLIENT_DATA", "Response_File_Path_toHK"].FlagData;
             // QE{DATE}_response.csv
             var fileName = Model.FlagData["HKSBL_LOCATE_FILE", source].FlagData.Replace("{DATE}", processDate);
 
             string fullFilePath = shareFolder + fileName;
+            if (source == "Grasshopper")
+            {
+                fullFilePath = shareFolderGrasshopper + fileName;
+            }
             if (!File.Exists(fullFilePath))
             {
                 LogMessage($"File not found: {fullFilePath}", LogType.Warning);
